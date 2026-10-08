@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image:
+previewed: yes
 ---
 **Тест облака**
 

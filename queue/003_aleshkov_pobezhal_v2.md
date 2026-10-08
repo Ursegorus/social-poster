@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image: media/aleshkov/03_stroy.jpg, media/aleshkov/06_chuikov.jpg
+previewed: yes
 ---
 **Не вытащил, а побежал**
 

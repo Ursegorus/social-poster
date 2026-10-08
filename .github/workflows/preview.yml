@@ -1,0 +1,19 @@
+name: preview
+on:
+  push: {paths: ["queue/**"], branches: [main]}
+  workflow_dispatch:
+concurrency: {group: social-poster, cancel-in-progress: false}
+permissions: {contents: write}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+      TG_OWNER_CHAT: ${{ secrets.TG_OWNER_CHAT }}
+      TG_TARGETS: ${{ secrets.TG_TARGETS }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python poster.py preview-new
+      - run: |
+          git config user.name "social-poster"; git config user.email "social-poster@users.noreply.github.com"
+          git add -A queue && (git diff --cached --quiet || (git commit -m "черновик отправлен на согласование" && git push))

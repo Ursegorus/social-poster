@@ -9,7 +9,10 @@ sys.stdout.reconfigure(encoding="utf-8")
 offset = None
 while True:
     r = api("getUpdates", offset=offset, timeout=0, allowed_updates=["callback_query"])
+    if "error" in r or not r.get("ok", True):
+        print("ОШИБКА Telegram:", str(r)[:200])
     ups = r.get("result", [])
+    print("обновлений:", len(ups))
     if not ups:
         break
     for u in ups:

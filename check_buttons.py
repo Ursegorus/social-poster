@@ -15,6 +15,7 @@ while True:
     for u in ups:
         offset = u["update_id"] + 1
         if "callback_query" in u:
+            print("кнопка:", u["callback_query"]["data"])
             handle(u["callback_query"])
 if offset:
     api("getUpdates", offset=offset, timeout=0, allowed_updates=["callback_query"])  # подтвердить

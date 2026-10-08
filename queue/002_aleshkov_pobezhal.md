@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image: media/aleshkov/11_Приказ_фрагмент.jpg, media/aleshkov/10_Детский_портрет.jpg
+previewed: yes
 ---
 **Не вытащил, а побежал**
 

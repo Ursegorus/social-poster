@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image: media/mazanik/17_avtobiografiya.jpg, media/mazanik/22_lichnyi_listok.jpg
+previewed: yes
 ---
 **Елена Мазаник: две страницы 1952 года**
 

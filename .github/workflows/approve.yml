@@ -1,0 +1,22 @@
+name: approve
+on:
+  workflow_dispatch:
+    inputs:
+      data: {required: true}
+      chat_id: {required: true}
+      message_id: {required: true}
+concurrency: {group: social-poster, cancel-in-progress: false}
+permissions: {contents: write}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+      TG_OWNER_CHAT: ${{ secrets.TG_OWNER_CHAT }}
+      TG_TARGETS: ${{ secrets.TG_TARGETS }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python approve_one.py "${{ inputs.data }}" "${{ inputs.chat_id }}" "${{ inputs.message_id }}"
+      - run: |
+          git config user.name "social-poster"; git config user.email "social-poster@users.noreply.github.com"
+          git add -A queue && (git diff --cached --quiet || (git commit -m "статус поста" && git push))

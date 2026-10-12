@@ -1,0 +1,4 @@
+name = "social-poster-tg"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+# Секреты (wrangler secret put): TG_BOT_TOKEN, OWNER_ID, WEBHOOK_SECRET, GITHUB_TOKEN

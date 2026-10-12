@@ -2,3 +2,6 @@
 approve.log
 __pycache__/
 *.pyc
+.webhook_secret
+worker/node_modules/
+worker/.wrangler/

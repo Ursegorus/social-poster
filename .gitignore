@@ -5,3 +5,4 @@ __pycache__/
 .webhook_secret
 worker/node_modules/
 worker/.wrangler/
+worker/.github_token

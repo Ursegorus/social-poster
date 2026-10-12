@@ -1,5 +1,5 @@
 ---
-status: draft
+status: rejected
 platforms: tg
 image:
 previewed: yes

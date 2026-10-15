@@ -1,5 +1,5 @@
 ---
-status: draft
+status: published
 platforms: tg
 image: media/mazanik/23_portret_cnb.jpg, media/mazanik/24_minsk_1941.jpg
 previewed: yes

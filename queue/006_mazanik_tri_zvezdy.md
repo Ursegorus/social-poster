@@ -1,5 +1,5 @@
 ---
-status: draft
+status: published
 platforms: tg
 image: media/mazanik/18_diplom_1952.jpg, media/mazanik/12_kube_minsk_1943.jpg
 previewed: yes

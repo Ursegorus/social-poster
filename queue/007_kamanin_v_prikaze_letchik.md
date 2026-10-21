@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image: media/kamanin/01_prikaz_2va_1944.jpg, media/kamanin/02_prikaz_5va_1945.jpg
+previewed: yes
 ---
 **«Лётчик» в приказе**
 

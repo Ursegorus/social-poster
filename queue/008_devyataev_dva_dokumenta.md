@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image: media/devyataev/14_donesenie_poteri.jpg, media/devyataev/31_ukaz_1957.jpg
+previewed: yes
 ---
 **Два документа Михаила Девятаева**
 

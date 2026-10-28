@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image: media/devyataev/11_prikaz_krasnoe_znamya.jpg, media/devyataev/12_nagradnoi_list.jpg
+previewed: yes
 ---
 **Девятаев до плена: приказ и наградной лист**
 

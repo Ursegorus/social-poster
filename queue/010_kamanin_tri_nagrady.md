@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image: media/kamanin/03_spisok_l306.jpg, media/kamanin/04_kartoteka_nagrad.jpg
+previewed: yes
 ---
 **Три награды Аркадия Каманина: что есть в бумагах**
 

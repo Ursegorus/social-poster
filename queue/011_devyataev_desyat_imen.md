@@ -2,6 +2,7 @@
 status: draft
 platforms: tg
 image: media/devyataev/22_uzedom.jpg, media/devyataev/18_zaksenhauzen.jpg
+previewed: yes
 ---
 **Десять имён: кто был в самолёте Девятаева**
 
